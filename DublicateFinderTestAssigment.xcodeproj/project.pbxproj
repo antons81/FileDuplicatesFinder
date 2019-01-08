@@ -12,6 +12,7 @@
 		1EF4278421E550F400656122 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1EF4278321E550F400656122 /* Assets.xcassets */; };
 		1EF4278721E550F400656122 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EF4278521E550F400656122 /* Main.storyboard */; };
 		1EF4279321E550F400656122 /* DublicateFinderTestAssigmentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF4279221E550F400656122 /* DublicateFinderTestAssigmentTests.swift */; };
+		1EF4279E21E5567900656122 /* HomeDirService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF4279D21E5567900656122 /* HomeDirService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +36,7 @@
 		1EF4278E21E550F400656122 /* DublicateFinderTestAssigmentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DublicateFinderTestAssigmentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1EF4279221E550F400656122 /* DublicateFinderTestAssigmentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DublicateFinderTestAssigmentTests.swift; sourceTree = "<group>"; };
 		1EF4279421E550F400656122 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1EF4279D21E5567900656122 /* HomeDirService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeDirService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +80,7 @@
 			children = (
 				1EF4277F21E550F200656122 /* AppDelegate.swift */,
 				1EF4278121E550F200656122 /* ViewController.swift */,
+				1EF4279D21E5567900656122 /* HomeDirService.swift */,
 				1EF4278321E550F400656122 /* Assets.xcassets */,
 				1EF4278521E550F400656122 /* Main.storyboard */,
 				1EF4278821E550F400656122 /* Info.plist */,
@@ -195,6 +198,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1EF4279E21E5567900656122 /* HomeDirService.swift in Sources */,
 				1EF4278221E550F200656122 /* ViewController.swift in Sources */,
 				1EF4278021E550F200656122 /* AppDelegate.swift in Sources */,
 			);

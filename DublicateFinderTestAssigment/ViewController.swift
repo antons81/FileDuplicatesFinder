@@ -9,11 +9,14 @@
 import Cocoa
 
 class ViewController: NSViewController {
+    
+    @IBOutlet weak var pathField: NSTextField!
+    @IBOutlet weak var resultText: NSTextView!
+    @IBOutlet weak var dataLabel: NSTextField!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        
     }
 
     override var representedObject: Any? {
@@ -21,7 +24,5 @@ class ViewController: NSViewController {
         // Update the view, if already loaded.
         }
     }
-
-
 }
 
