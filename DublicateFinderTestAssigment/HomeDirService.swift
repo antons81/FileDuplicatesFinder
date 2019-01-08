@@ -9,15 +9,10 @@
 import Foundation
 
 class HomeDirService {
-    
-    private let currentUser: String
-    
-    init(with user: String) {
-        self.currentUser = user
-    }
-    
-    func getUserHomeDir() -> String {
-        guard let userDir = NSHomeDirectoryForUser(self.currentUser) else { return "Cannot find \(currentUser)'s directory path" }
-        return userDir
+    static var userHomeDirPath: String {
+        let pw = getpwuid(getuid())
+        guard let home = pw?.pointee.pw_dir else { return "Cannot get \(NSUserName())'s home directory" }
+        let homePath = FileManager.default.string(withFileSystemRepresentation: home, length: Int(strlen(home)))
+        return homePath
     }
 }

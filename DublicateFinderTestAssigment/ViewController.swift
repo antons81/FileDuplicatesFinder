@@ -16,13 +16,11 @@ class ViewController: NSViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.pathField.stringValue = self.currentUserPath()
     }
-
-    override var representedObject: Any? {
-        didSet {
-        // Update the view, if already loaded.
-        }
+    
+    private func currentUserPath() -> String {
+        return HomeDirService.userHomeDirPath
     }
 }
 
